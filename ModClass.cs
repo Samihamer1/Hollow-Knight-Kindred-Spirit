@@ -14,7 +14,7 @@ namespace Kindred_Spirit
         private readonly List<string> bossMain = new List<string>() { "Vessel", "Spirit", "Kindred Spirit" };
         private readonly List<string> bossSuper = new List<string>() { "Fallen", "Kindred", "Absolute" };
         private readonly List<string> dreamnailDialogue = new List<string>() { "Betrayed! Betrayed!", "Sister... Trusted you...", "Trust none... Fight!" };
-        new public string GetName() => "Kindred Spirit";
+        public Kindred_Spirit() : base("Kindred Spirit") { }
         public override string GetVersion() => "v1.0.0.0";
 
         public override List<(string, string)> GetPreloadNames()
