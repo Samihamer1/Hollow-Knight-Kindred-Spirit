@@ -14,8 +14,8 @@ namespace Kindred_Spirit
         private readonly List<string> bossMain = new List<string>() { "Vessel", "Spirit", "Kindred Spirit" };
         private readonly List<string> bossSuper = new List<string>() { "Fallen", "Kindred", "Absolute" };
         private readonly List<string> dreamnailDialogue = new List<string>() { "Betrayed! Betrayed!", "Sister... Trusted you...", "Trust none... Fight!" };
-        new string GetName() => "Kindred Spirit";
-        public override string GetVersion() => "v0.0.0.0";
+        new public string GetName() => "Kindred Spirit";
+        public override string GetVersion() => "v1.0.0.0";
 
         public override List<(string, string)> GetPreloadNames()
         {
@@ -50,7 +50,7 @@ namespace Kindred_Spirit
                 if (value == true)
                 {
                     numberofhits += 1;
-                    if (numberofhits == 6)
+                    if (numberofhits == 5)
                     {
                         AbsoluteToggle = true;
                         numberofhits = 0;
