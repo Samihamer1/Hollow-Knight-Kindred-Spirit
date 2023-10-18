@@ -5,3 +5,4 @@ Adds a dream and non dream boss version of the Greenpath Vessel, replacing the s
 Toggle the statue on by hitting with a dream nail, and on the 5th time the dream boss is toggled on: Absolute Kindred Spirit becomes available.
 (The Absolute version is a joke, and isn't meant to be beaten.).
 
+Whichever version of the boss the statue currently has active will be the one you face in the pantheons.
