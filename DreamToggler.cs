@@ -23,6 +23,14 @@ namespace Kindred_Spirit
             dreamtoggle.SetState(true);
 
             GameManager.instance.StartCoroutine(DelayedActivation(dreamtoggle, bossStatue));
+
+            //add the sprite :)
+            GameObject statuealt = new GameObject("Statue");
+            statuealt.transform.parent = megamossstatue.Child("Base").Child("StatueAlt").transform;
+            statuealt.transform.localScale = new Vector3(2, 2, 2);
+            statuealt.transform.localPosition = new Vector3(0, 0.2f, 3);
+            SpriteRenderer sprite = statuealt.AddComponent<SpriteRenderer>();
+            sprite.sprite = ResourceLoader.LoadSprite("Kindred_Spirit.Resources.Sprites.Statue.png");
         }
 
         private static IEnumerator DelayedActivation(BossStatueDreamToggle toggler, BossStatue statue)

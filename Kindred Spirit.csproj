@@ -300,4 +300,7 @@
     <EmbeddedResource Include="Main.cs" />
     <EmbeddedResource Include="DreamnailReject.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Sprites\Fireball1Cast\" />
+  </ItemGroup>
 </Project>

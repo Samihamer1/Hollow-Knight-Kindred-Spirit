@@ -15,7 +15,7 @@ namespace Kindred_Spirit
         private readonly List<string> bossSuper = new List<string>() { "Fallen", "Kindred", "Absolute" };
         private readonly List<string> dreamnailDialogue = new List<string>() { "Betrayed! Betrayed!", "Sister... Trusted you...", "Trust none... Fight!" };
         public Kindred_Spirit() : base("Kindred Spirit") { }
-        public override string GetVersion() => "v1.0.0.0";
+        public override string GetVersion() => "v1.0.0.1";
 
         public override List<(string, string)> GetPreloadNames()
         {
@@ -71,8 +71,6 @@ namespace Kindred_Spirit
 
         private string ChangeText(string key, string sheetTitle, string orig)
         {
-            Modding.Logger.Log(key);
-            Modding.Logger.Log(orig);
             int option = DreamToggle ? 1 : 0;
             if (AbsoluteToggle)
             {

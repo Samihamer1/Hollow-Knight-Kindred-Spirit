@@ -41,6 +41,7 @@
             AddToPosBulk("FallGV", -0.6406, 0.7812, 0.7812, -1.4219, 1, 11);
             AddToPosBulk("Fireball AnticGV", -0.8281, 0.5, 0.7812, -1.3438, 1, 3);
             AddToPosBulk("Fireball2 CastGV", -0.7031, 2.5938, 1.4219, -1.2969, 1, 6);
+            AddToPosBulk("Fireball1 CastGV", -0.5469, 1.25, 0.6094, -1.4375, 1, 6);
             AddToPosBulk("TurnGV", -0.6094, 0.4375, 0.5469, -1.4219, 1, 2);
             AddToPosBulk("RunGV", -0.7656, 0.5625, 0.625, -1.4063, 1, 13);
             AddToPosBulk("LandGV", -0.671875, 0.57812494, 0.48437506, -1.390625, 1, 3);

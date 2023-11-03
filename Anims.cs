@@ -121,6 +121,7 @@ namespace Kindred_Spirit
                 setLoop("FallGV", 3);
                 LoadKnightAnimation("Kindred_Spirit.Resources.Sprites.FireballAntic.set.png", "Fireball AnticGV", 30, tk2dSpriteAnimationClip.WrapMode.Once, 3, 81, 120);
                 LoadKnightAnimation("Kindred_Spirit.Resources.Sprites.Fireball2Cast.set.png", "Fireball2 CastGV", 20, tk2dSpriteAnimationClip.WrapMode.Once, 6, 212, 175);
+                LoadKnightAnimation("Kindred_Spirit.Resources.Sprites.Fireball1Cast.set.png", "Fireball1 CastGV", 20, tk2dSpriteAnimationClip.WrapMode.Once, 6, 110, 132);
                 LoadKnightAnimation("Kindred_Spirit.Resources.Sprites.Turn.set.png", "TurnGV", 20, tk2dSpriteAnimationClip.WrapMode.Once, 2, 72, 127);
                 LoadKnightAnimation("Kindred_Spirit.Resources.Sprites.Run.set.png", "RunGV", 12, tk2dSpriteAnimationClip.WrapMode.Once, 13, 86, 130);
                 setLoop("RunGV", 6);

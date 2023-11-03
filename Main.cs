@@ -768,7 +768,7 @@ namespace Kindred_Spirit
             FsmState fireballflipstate = control.CreateState("Fireball Flip");
             fireballflipstate.AddAction(new FlipScale { gameObject = ownerdefault, flipHorizontally = true, flipVertically = false, everyFrame = false, lateUpdate = false });
 
-            string fireballname = "Fireball1 Cast";
+            string fireballname = "Fireball1 CastGV";
             if (Kindred_Spirit.DreamToggle)
             {
                 fireballname = "Fireball2 CastGV";
@@ -1477,6 +1477,8 @@ namespace Kindred_Spirit
                 if (!Kindred_Spirit.DreamToggle)
                 {
                     fireballcontrol.GetState("Idle").Transitions[1].FsmEvent = new FsmEvent("");
+                    //fix size for non-dream
+                    fireballcontrol.GetState("Set Damage").RemoveAction(6);
                 }
 
                 //velocity stuff -- I KNOW ITS BAD ANDA HORRIBLE I DONT CARE I DID NOT PLAN FOR THIS AT ALL
