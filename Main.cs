@@ -133,7 +133,7 @@ namespace Kindred_Spirit
             deatheffects.transform.localPosition = new Vector3(0, 0, 0);
             deatheffects.Child("Dream Burst Pt").SetActive(false);
             deatheffects.Child("perma_death_looping_effects").SetActive(true);
-            deatheffects.GetComponent<tk2dSpriteAnimator>().DefaultClipId = 229;
+            deatheffects.GetComponent<tk2dSpriteAnimator>().DefaultClipId = 230;
 
             GameObject spells = Instantiate(HeroController.instance.gameObject.Child("Spells"));
             spells.transform.parent = clone.transform;
@@ -1026,7 +1026,7 @@ namespace Kindred_Spirit
             //global transitions
             FsmTransition[] globaltrans = new FsmTransition[3];
             globaltrans[0] = new FsmTransition { FsmEvent = FsmEvent.GetFsmEvent("STUN") ?? new FsmEvent("STUN"), ToFsmState = control.Fsm.GetState("Stun") };
-            globaltrans[1] = new FsmTransition { FsmEvent = FsmEvent.GetFsmEvent("DEATH") ?? new FsmEvent("DEATH"), ToFsmState = control.Fsm.GetState("Death") };
+            globaltrans[1] = new FsmTransition { FsmEvent = FsmEvent.GetFsmEvent("DEATH") ?? new FsmEvent("DEATH"), ToFsmState = control.Fsm.GetState("Death") };          
             globaltrans[2] = new FsmTransition { FsmEvent = FsmEvent.GetFsmEvent("BEATDOWN") ?? new FsmEvent("BEATDOWN"), ToFsmState = control.Fsm.GetState("Beatdown") };
 
             control.Fsm.GlobalTransitions = globaltrans;
